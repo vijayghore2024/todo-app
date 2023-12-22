@@ -1,0 +1,12 @@
+.displaytodo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}

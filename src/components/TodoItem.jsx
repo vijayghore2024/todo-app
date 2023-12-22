@@ -1,9 +1,12 @@
 import React from 'react'
+import './TodoItem.css'
 
 const TodoItem = (props) => {
   return (
-    <div style={{fontSize: '25px'}}>
-      {props.desc}
+    <div className='todo-item'>
+        <div className="item-descr">{props.desc}</div>
+        <button className='item-btn'>Complete</button>
+        <button className='item-btn'>Delete</button>
     </div>
   )
 }
