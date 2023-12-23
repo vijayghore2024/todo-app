@@ -1,15 +1,21 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import TodoApp from "./components/TodoApp";
 import './App.css'
+import { MyContext } from "./MyContext";
+import { useState } from "react";
 
 function App() {
+
+  const [todoArr, setTodoArr] = useState([]);
+
   return (
 
     <div className="app-container">
-        {/* <Navbar /> */}
+      <MyContext.Provider value={{todoArr, setTodoArr}}>
+
         <TodoApp />
-        {/* <Footer /> */}
+     
+      </MyContext.Provider>
+
     </div>
 
     

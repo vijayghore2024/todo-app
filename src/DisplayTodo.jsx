@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import TodoItem from './components/TodoItem'
 import './components/DisplayTodo.css'
+import { MyContext } from './MyContext'
 
 const DisplayTodo = () => {
+    // const [todoArr, setTodoArr] = useContext(MyContext);
+
     let todoArr = ["Go to Market", "Plan for Vacations", "Study React", "Use Mobile Phone", "Repair Laptop"];
 
     return (
