@@ -11,9 +11,11 @@ function App() {
 
     <div className="app-container">
       <MyContext.Provider value={{todoArr, setTodoArr}}>
-
         <TodoApp />
-     
+
+
+
+
       </MyContext.Provider>
 
     </div>
