@@ -13,6 +13,9 @@ const DisplayTodo = () => {
             <h1>My Todos</h1>
             <div className='todo-items'>
 
+                {
+                    (todoArr.length === 0)?"No Todos to Display": ""
+                }
                 {todoArr.map(item =>
                     <TodoItem todo={item} />
                 )}
